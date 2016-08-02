@@ -10,10 +10,11 @@
 -- HOW TO RUN
 --
 - AS DAEMON:
+++
  docker run -d --name rfoutlet --device /dev/ttyAMA0:/dev/ttyAMA0 --device /dev/mem:/dev/mem --privileged  -p 8888:80  -name rfoutlet rajr/rpi-raspbian-wiringpi-rfoutlet
 
 - INTERACTIVE:
---
+++
  docker run -it --rm --name rfoutlet --device /dev/ttyAMA0:/dev/ttyAMA0 --device /dev/mem:/dev/mem --privileged  -p 8888:80  rajr/rpi-raspbian-wiringpi-rfoutlet /bin/bash -c '/usr/sbin/apache2ctl -D FOREGROUND'
 
 -- TEST COMMAND
