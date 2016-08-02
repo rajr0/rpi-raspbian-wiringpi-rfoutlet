@@ -1,10 +1,12 @@
 # rpi-raspbian-wiringpi-rfoutlet
-==
+================================
 -- HOW TO BUILD THE HARDWARE
 --
 - https://timleland.com/wireless-power-outlets/
 - Wiring for 433MHz Wireless Transmitter Module
 - #GND #5v #GPIO-17
+
+- Build  433MHz Wireless Receiver and sniff the codes and edit toggle.php
 
 -- HOW TO RUN
 --
